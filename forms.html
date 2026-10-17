@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background: #cdcaca;
+             font-family: "Lora", serif;
+        }
+        form{
+            width:35%;
+            border: 1px solid #6765ee;
+            padding: 12px;
+            color: #e77e29;
+            margin: auto;
+        }
+
+        .lbl-full{
+            display: block; /*streches the label to full width of the form*/
+        }
+
+        .input-full{
+            width:100%;
+            padding: 12px;
+            box-sizing: border-box; /*makes the padding to be included in the width of the input*/
+            margin-bottom: 12px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Form inputs text, email, paswords, phone, date,radio botton,checkbox,select -->
+
+    <form action="">
+        <label class="lbl-full" for="full_name">First name and last name</label>
+        <input class="input-full" type="text" name="full_name" id="full_name" placeholder="Enter your full name" required>
+
+        <label class="lbl-full" for="email">Email</label>
+        <input class="input-full" type="email" name="email" id="email" placeholder="Email" required>
+
+        <label class="lbl-full" for="password">Password</label>
+        <input class="input-full" type="password" name="password" id="password" placeholder="Password" required>
+
+        <label class="lbl-full" for="phone">Phone</label>
+        <input class="input-full" type="tel" name="phone" id="phone" placeholder="Phone" required>
+
+        <label class="lbl-full" for="date">Date of Birth</label>
+        <input class="input-full" type="date" name="dob" id="dob" required min="1940-01-01" max="2008-12-31">
+
+        <label class="lbl-full" for="gender">Gender</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female" checked>
+        <label for="female">Female</label>
+
+        <br>
+        <p>select favourite sport(s):</p>
+        <input type="checkbox" name="Tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+        <br>
+
+        <input type="checkbox" name="Football" id="football" value="football">
+        <label for="football">Football</label>
+        <br>
+        <input type="checkbox" name="Rugby" id="rugby" value="rugby">
+        <label for="rugby">Rugby</label>
+
+        <br>
+        <br>
+
+        <label class="lbl-full" for="county">County</label>
+        <select class="input-full" name="county" id="county">
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Eldoret">Eldoret</option>
+        </select>
+        <!-- slider input -->
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

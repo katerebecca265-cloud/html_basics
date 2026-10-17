@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            font-family: 'Libre Caslon Condensed', serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background-color: #6d1919; */
+        }
+
+        .nav-items {
+            width: 60%;
+            /* background-color: #d3d3d3; */
+            display: flex;
+            justify-content: space-between;/*horizontzal arrangement*/
+            align-items: center;
+
+        }
+        .nav-items ul {
+            display: flex;
+            list-style-type: none;
+        }
+        .nav-items li {
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #6d1919;
+            text-transform: uppercase;
+        }
+
+        /* git add. */
+        /* git commit -m "built the nerve bar" */
+        /* git push */
+
+        .nav-items a:hover {
+            color: #1a70a6;
+            text-decoration: underline;
+
+        }
+        .nav-items img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- semantic tags -->
+    <nav>
+        <div class="nav-items">
+            <img src="images/bonfire.png" alt="Bonfire Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+</body>
+
+</html>
